@@ -1,0 +1,10 @@
+### 
+## @Github: https://github.com/Certseeds/CS305_2019F_Remake
+## @Organization: SUSTech
+## @Author: nanoseeds
+## @Date: 2020-06-22 23:30:18
+## @LastEditors: nanoseeds
+## @LastEditTime: 2020-06-22 23:30:38
+### 
+!./origin/*
+!/pca_png/*
