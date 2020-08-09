@@ -10,7 +10,7 @@
 
 ## CS305-Network
 
-1. Based on 2019-Fail.
+1. Based on 2019-Fall.
 
 2. All code(in this project,include *.py,*.sh,*.pcapng,etc) based on AGPL3.0(or any later version).
 
