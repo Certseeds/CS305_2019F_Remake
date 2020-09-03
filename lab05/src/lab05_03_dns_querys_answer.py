@@ -7,15 +7,15 @@
 @Date: 2020-06-22 23:40:31 
 @LastEditors  : nanoseeds
 """
-""" CS305_Network 
+""" CS305_2019F_Remake 
     Copyright (C) 2020  nanoseeds
 
-    CS305_Network is free software: you can redistribute it and/or modify
+    CS305_2019F_Remake is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
 
-    CS305_Network is distributed in the hope that it will be useful,
+    CS305_2019F_Remake is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Affero General Public License for more details.
@@ -25,13 +25,14 @@
 """
 
 import time
+
 from lab05.src.lab05_03_dns_querys import dns_querys
 from lab05.src.lab05_03_helper_functions import *
 
 
 class dns_querys_answer(object):
     def __init__(self, response: bytes):
-        '''
+        """
         首先呢,为了信息压缩,使用指针的方式来重复利用域名,
         Name部分有两种可能,一是两个八位数组,其中第一个八位数组的前两个value == 11
         第二个是传统的{Number (几个八位数组表示的字符) } * n +00(第二种情况还有可能在末尾有一个情况1).
@@ -39,7 +40,7 @@ class dns_querys_answer(object):
         TTL:四个八位数组,代表时间间隔
         RDLENGTH:预示接下来的RDATA长度,两个八位数组.
         RDATA:RDLENGTH个八位数组,其中的具体表现形式,还可以为嵌套的方式,即其中的最后一部分被表示为指针.
-        '''
+        """
         self.HQ = dns_querys(response)
         self.answers_number = trans_bit_toint(self.HQ.header[6], self.HQ.header[7]) + \
                               trans_bit_toint(self.HQ.header[8], self.HQ.header[9])
@@ -93,9 +94,9 @@ class dns_querys_answer(object):
                   " this is ANswers.length", len(self.HQ.Answers))
 
     def get_header_question_answers(self) -> bytes:
-        '''
+        """
         :return: 一个byte流,其中由这个responsex的各个部分组合而成
-        '''
+        """
         will_return: List[int] = self.HQ.get_querys_header_question()
         # print(will_return)
         for i in range(0, self.answers_number, 1):

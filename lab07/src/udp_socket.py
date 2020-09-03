@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 # coding=utf-8
-'''
+"""
 @Github: https://github.com/Certseeds/CS305_2019F_Remake
 @Organization: SUSTech
 @Author: nanoseeds
 @Date: 2020-07-02 09:49:59
 @LastEditors: nanoseeds
 @LastEditTime: 2020-07-04 15:27:00
-'''
-""" CS305_Network 
+"""
+""" CS305_2019F_Remake 
     Copyright (C) 2020  nanoseeds
 
-    CS305_Network is free software: you can redistribute it and/or modify
+    CS305_2019F_Remake is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
 
-    CS305_Network is distributed in the hope that it will be useful,
+    CS305_2019F_Remake is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Affero General Public License for more details.
@@ -51,12 +51,12 @@ class UDPsocket(socket):
         self.delay_time: float = delay_time  # 延时时长
 
     def recvfrom(self, bufsize: int, flags: int = ...) -> Tuple[bytes, Tuple[str, int]]:
-        '''
+        """
         需要注意到的是,因为udp是基于包的协议,所以bufsize指的是收到一个包的最大长度.
         在本机上client-server通信,udp丢包率较低可忽略,
         所以,recvfrom的每一个包默认视作可收到,再有bufsize做截断.
         而且,这里的丢包也不是完全接收不到,只是接收到了空包
-        '''
+        """
         data: bytes
         addr: Tuple[str, int]  # example: ('127.0.0.1',random.randint(10000,65535))
         data, addr = super().recvfrom(bufsize)

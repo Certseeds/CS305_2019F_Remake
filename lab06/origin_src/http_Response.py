@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 # coding=utf-8
-'''
+"""
 @Github: https://github.com/Certseeds/CS305_2019F_Remake
 @Organization: SUSTech
 @Author: nanoseeds
 @Date: 2019-12-23 10:33:34
 LastEditors: nanoseeds
 LastEditTime: 2020-08-08 22:53:40
-'''
-""" CS305_Network 
+"""
+""" CS305_2019F_Remake 
     Copyright (C) 2020  nanoseeds
 
-    CS305_Network is free software: you can redistribute it and/or modify
+    CS305_2019F_Remake is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
 
-    CS305_Network is distributed in the hope that it will be useful,
+    CS305_2019F_Remake is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Affero General Public License for more details.
@@ -24,10 +24,10 @@ LastEditTime: 2020-08-08 22:53:40
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
-import os
-import mimetypes
-import urllib.parse
 import html
+import mimetypes
+import os
+import urllib.parse
 
 state_code_msg = {
     206: "Partial Content",
