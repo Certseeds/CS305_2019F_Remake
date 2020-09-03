@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 # coding=utf-8
-'''
+"""
 @Github: https://github.com/Certseeds/CS305_2019F_Remake
 @Organization: SUSTech
 @Author: nanoseeds
 @Date: 2020-07-03 13:08:19
 LastEditors: nanoseeds
 LastEditTime: 2020-08-08 22:54:28
-'''
-""" CS305_Network 
+"""
+""" CS305_2019F_Remake 
     Copyright (C) 2020  nanoseeds
 
-    CS305_Network is free software: you can redistribute it and/or modify
+    CS305_2019F_Remake is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
 
-    CS305_Network is distributed in the hope that it will be useful,
+    CS305_2019F_Remake is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Affero General Public License for more details.
@@ -102,10 +102,10 @@ class rdt_socket(UDPsocket):
 
     # Done
     def accept(self) -> Tuple['rdt_socket', Tuple[str, int]]:
-        '''
+        """
         相当于这玩意的作用是
         socket本身接受一个socket,然后new一个socket with recieve 地址返回.
-        '''
+        """
         # receive syn ; send syn, ack; receive ack
         self.client = False
         self.setblocking(True)

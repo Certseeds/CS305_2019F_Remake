@@ -7,15 +7,15 @@
 @Date: 2020-06-20 12:32:12 
 @LastEditors  : nanoseeds
 """
-""" CS305_Network 
+""" CS305_2019F_Remake 
     Copyright (C) 2020  nanoseeds
 
-    CS305_Network is free software: you can redistribute it and/or modify
+    CS305_2019F_Remake is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
 
-    CS305_Network is distributed in the hope that it will be useful,
+    CS305_2019F_Remake is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Affero General Public License for more details.
@@ -28,7 +28,7 @@ import asyncio
 
 async def thinkpeach(reader, writer):
     data = await reader.readline()
-    '''message = data.decode().split(' ')
+    """message = data.decode().split(' ')
     print(data)
     if data == b'\r\n':
        break
@@ -37,7 +37,7 @@ async def thinkpeach(reader, writer):
                                   b'Connection: close\r\n', b'\r\n',
                                   b'<html><body>Hello World!<body></html>\r\n', b'\r\n' ])
     await writer.drain()
-    writer.close()'''
+    writer.close()"""
     message = data.decode()
     addr = writer.get_extra_info('peername')
     writer.weiter(data)

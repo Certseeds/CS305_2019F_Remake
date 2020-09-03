@@ -86,13 +86,13 @@ class rdt_socket(UDPsocket):
 
     def accept(self):
         self.client = False
-        '''
+        """
         相当于这玩意的作用是
         socket本身接受一个,
         发送一个
         接受一个socket,然后new一个socket with recieve 地址返回.
         :return:
-        '''
+        """
         self.setblocking(True)
         while True:
             self.setblocking(True)
@@ -433,10 +433,10 @@ class rdt_socket(UDPsocket):
                 if not check_sum(data_ack) and count < pre_count:
                     count = pre_count
 
-                '''
+                """
                 if not check_sum(data_ack) and data_ack_header[2] == seq_list[count] and data_ack_header[0] == packet_number:
                     count += 1
-                '''
+                """
                 i += 1
 
             if count == packet_number:

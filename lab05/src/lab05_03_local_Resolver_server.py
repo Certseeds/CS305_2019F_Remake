@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 # coding=utf-8
-'''
+"""
 @Github: https://github.com/Certseeds/CS305_2019F_Remake
 @Organization: SUSTech
 @Author: nanoseeds
 @ChangeDate: 2019-12-23 10:33:34
 @LastEditors: nanoseeds
-'''
+"""
 from typing import Any
 
-""" CS305_Network 
+""" CS305_2019F_Remake 
     Copyright (C) 2020  nanoseeds
 
-    CS305_Network is free software: you can redistribute it and/or modify
+    CS305_2019F_Remake is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
 
-    CS305_Network is distributed in the hope that it will be useful,
+    CS305_2019F_Remake is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Affero General Public License for more details.
@@ -31,9 +31,9 @@ from lab05.src.lab05_03_helper_functions import *
 from lab05.src.lab05_03_dns_querys import dns_querys
 from lab05.src.lab05_03_dns_querys_answer import dns_querys_answer
 
-'''
+"""
 首先,本次出现的 八位数组 能够被写为 [0-f][0-f]的形式,每个字符[0-f]可被转写为[0-1]*4,所以八位数组可以被转写为[0-1]*8,而二进制流中的最小单位就是八位数组:[0-f][0-f]
-'''
+"""
 questions_cache: List[List[int]] = []
 response_cache: List[dns_querys_answer] = []
 prot_number: int = 53
