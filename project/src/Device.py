@@ -31,15 +31,14 @@ class Device:
     and a set of neighbors.
     """
 
-    def __init__(self, name):
+    def __init__(self, name) -> None:
         self.name = name
         self.neighbors = set()
 
-    def add_neighbor(self, dev):
+    def add_neighbor(self, dev) -> None:
         self.neighbors.add(dev)
 
     # . . .
 
-    def __str__(self):
-        return "{}({})".format(self.__class__.__name__,
-                               self.name)
+    def __str__(self) -> str:
+        return "{}({})".format(self.__class__.__name__, self.name)

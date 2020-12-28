@@ -22,9 +22,11 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
-from project.Device import Device
 
 
+
+
+from project.src.Device import Device
 class TMSwitch(Device):
     """Representation of a switch, extends Device
 
@@ -32,7 +34,7 @@ class TMSwitch(Device):
     which contains information about the switch's ports
     """
 
-    def __init__(self, name, switch):
+    def __init__(self, name, switch) -> None:
         super(TMSwitch, self).__init__(name)
 
         self.switch = switch

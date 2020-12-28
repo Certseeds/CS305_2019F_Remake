@@ -10,7 +10,7 @@ import argparse
 from mininet.cli import CLI
 from mininet.net import Mininet
 from mininet.node import OVSSwitch, RemoteController
-from mininet.topo import Topo,SingleSwitchTopo,LinearTopo
+from mininet.topo import Topo, SingleSwitchTopo, LinearTopo
 from mininet.topolib import TreeTopo
 from mininet.log import setLogLevel, info
 
@@ -99,13 +99,13 @@ class MeshTopo(Topo):
     def __init__(self, n=4, **opts):
         Topo.__init__(self, **opts)
         switches = []
-        for i in range(1,n+1):
+        for i in range(1, n+1):
             h = self.addHost('h%d' % i)
             s = self.addSwitch('s%d' % i)
             self.addLink(h, s)
             switches.append(s)
-        for i in range(0,n-1):
-            for j in range(i+1,n):
+        for i in range(0, n-1):
+            for j in range(i+1, n):
                 self.addLink(switches[i], switches[j])
 
 
@@ -210,7 +210,7 @@ def main():
         # Send a "join message", which is a gratuitous ARP
         info('*** Sending ARPing from host %s\n' % (h.name))
         send_arping(h)
-    CLI( net )
+    CLI(net)
     net.stop()
 
 

@@ -22,9 +22,11 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
-from project.Device import Device
 
 
+
+
+from project.src.Device import Device
 class TMHost(Device):
     """Representation of a host, extends Device
 
@@ -33,7 +35,7 @@ class TMHost(Device):
     the host is connected
     """
 
-    def __init__(self, name, host):
+    def __init__(self, name, host) -> None:
         super(TMHost, self).__init__(host)
 
         self.host = host
