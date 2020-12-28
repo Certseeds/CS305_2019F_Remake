@@ -22,33 +22,36 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
-from project.Device import Device
-from project.TMHost import TMHost
-from project.TMSwitch import TMSwitch
 
 
+
+
+from typing import List
+from project.src.Device import Device
+from project.src.TMHost import TMHost
+from project.src.TMSwitch import TMSwitch
 class TopoManager:
     """
     Example class for keeping track of the network topology
 
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         # TODO:  Initialize some data structures
-        self.all_devices = []
+        self.all_devices: List[Device] = []
         pass
 
-    def add_switch(self, sw):
-        name = "switch_{}".format(sw.dp.id)
-        switch = TMSwitch(name, sw)
+    def add_switch(self, sw) -> None:
+        name: str = "switch_{}".format(sw.dp.id)
+        switch: TMSwitch = TMSwitch(name, sw)
 
         self.all_devices.append(switch)
 
         # TODO:  Add switch to some data structure(s)
 
-    def add_host(self, h):
-        name = "host_{}".format(h.mac)
-        host = TMHost(name, h)
+    def add_host(self, h) -> None:
+        name: str = "host_{}".format(h.mac)
+        host: TMHost = TMHost(name, h)
 
         self.all_devices.append(host)
 

@@ -178,7 +178,8 @@ class OfCtl(object):
         pkt.serialize()
 
         # Send packet out
-        self.send_packet_out(src_port, output_port, pkt.data, data_str=str(pkt))
+        self.send_packet_out(src_port, output_port,
+                             pkt.data, data_str=str(pkt))
 
     def send_icmp(self, in_port, protocol_list, vlan_id, icmp_type,
                   icmp_code, icmp_data=None, msg_data=None, src_ip=None):

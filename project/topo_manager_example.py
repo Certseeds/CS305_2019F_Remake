@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# coding=utf-8
 """Example Topology Manager Template
 CSCI1680
 
@@ -18,6 +20,7 @@ class Device():
     Any device (switch or host) has a name (used for debugging only)
     and a set of neighbors.
     """
+
     def __init__(self, name):
         self.name = name
         self.neighbors = set()
@@ -27,7 +30,7 @@ class Device():
 
     # . . .
 
-    def __str__(self):
+    def __str__(self) -> str:
         return "{}({})".format(self.__class__.__name__,
                                self.name)
 
@@ -93,6 +96,7 @@ class TopoManager():
     Example class for keeping track of the network topology
 
     """
+
     def __init__(self):
         # TODO:  Initialize some data structures
         self.all_devices = []

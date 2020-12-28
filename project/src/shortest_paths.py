@@ -70,7 +70,7 @@ class ShortestPathSwitching(app_manager.RyuApp):
         """
         host = ev.host
         self.logger.warn("Host Added:  %s (IPs:  %s) on switch%s/%s (%s)",
-                          host.mac, host.ipv4,
+                         host.mac, host.ipv4,
                          host.port.dpid, host.port.port_no, host.port.hw_addr)
 
         # TODO:  Update network topology and flow rules
@@ -100,8 +100,8 @@ class ShortestPathSwitching(app_manager.RyuApp):
         dst_port = link.dst
 
         self.logger.warn("Deleted Link:  switch%s/%s (%s) -> switch%s/%s (%s)",
-                          src_port.dpid, src_port.port_no, src_port.hw_addr,
-                          dst_port.dpid, dst_port.port_no, dst_port.hw_addr)
+                         src_port.dpid, src_port.port_no, src_port.hw_addr,
+                         dst_port.dpid, dst_port.port_no, dst_port.hw_addr)
 
         # TODO:  Update network topology and flow rules
 
@@ -147,7 +147,6 @@ class ShortestPathSwitching(app_manager.RyuApp):
                 # TODO:  Generate a *REPLY* for this request based on your switch state
 
                 # Here is an example way to send an ARP packet using the ofctl utilities
-                #ofctl.send_arp(vlan_id=VLANID_NONE,
+                # ofctl.send_arp(vlan_id=VLANID_NONE,
                 #               src_port=ofctl.dp.ofproto.OFPP_CONTROLLER,
                 #               . . .)
-
