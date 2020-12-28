@@ -1,5 +1,5 @@
 <!--
- * @Github: https://github.com/Certseeds/CS305_2019F_Remake
+ * @Github: https://github.com/Certseeds/CS305_Remake
  * @Organization: SUSTech
  * @Author: nanoseeds
  * @Date: 2020-06-19 16:06:56
@@ -9,7 +9,8 @@
  -->
 ## <div>CS305 Computer Network</div>
 ## <div>Report_Lab02</div>
-**SID**:  \*\*\*\*\*\*\*\*   
+
+**SID**:  $********$
 **Name**:  nanoseeds  
 
 ### Question 1
@@ -35,30 +36,33 @@ def judge_is_prime(number: int) -> bool:
 ```
 
 ### Question 2
-1.  Use `http` filter to find the HTTP packets
 
-  <div>
+1. Use `http` filter to find the HTTP packets
+
+<div>
   <img src="./pca_pngs/lab02_02_01.png"><br />
   <div>Fig.1</div>
 </div>
 
 1. In the graph below, there are five level,
-  + The source ip address is  `192.168.199.237`
-  + The source port is `3084`
-  + The destination's ip address is `104.18.145.11`
-  + The destination port is `80`
+
++ The source ip address is  `192.168.199.237`
++ The source port is `3084`
++ The destination's ip address is `104.18.145.11`
++ The destination port is `80`
   
 1. 
-  <div>
+<div>
   <img src="./pca_pngs/lab02_02_02.png"><br />
   <div>Fig.2</div>
-  </div>
+</div>
   
   +  The Host is example.com, the same with the domain
   + The User-agent is the same with my UA (But I use a random User-Agent extension so it always changes)
   + The Accept-Language is the still same to my browser.
 
 ### Question 3
+
 1. + 使用`tracert www.baidu.com`,得到的记录如下.
 
 ``` log
@@ -81,21 +85,23 @@ def judge_is_prime(number: int) -> bool:
 
 跟踪完成。
 ```
-  + 使用wireshark截图如下
-  <div>
+
++ 使用wireshark截图如下
+<div>
   <img src="./pca_pngs/lab02_03_01.png"><br />
   <div>Fig.3</div>
-  </div>
+</div>
 
 2. 
-  + in the log of tracert, it seems that foe every hop, it sends 3 packets.
-  + In the second graph, we can find that for each ttl = x (x is a variable), there exist 3 packets (those pink packets, ttl = x can be find in the rightest direction). 
 
-3. Those Black & Green packets are received packets (However there are three pink packets which is received in the below of graph). There exist three kind of packets in this graph.
-  1.  First include “Time to live exceeded”, which means packet’s TTL is zero and then was the finally router send a packet to inform the origin one.
-  It’s source IP address include
-    + `192.168.199.1` (my router’s default address)
-    + `10.230.0.1` (the school network’s default address)
++ in the log of tracert, it seems that foe every hop, it sends 3 packets.
++ In the second graph, we can find that for each ttl = x (x is a variable), there exist 3 packets (those pink packets, ttl = x can be find in the rightest direction). 
+
+1. Those Black & Green packets are received packets (However there are three pink packets which is received in the below of graph). There exist three kind of packets in this graph.
+  1.  First include “Time to live exceeded”, which means packet's TTL is zero and then was the finally router send a packet to inform the origin one.
+  It's source IP address include
+    + `192.168.199.1` (my router's default address)
+    + `10.230.0.1` (the school network's default address)
     + `10.39.237.254`
     + `10.254.78.141`
     + `10.254.80.138`
@@ -135,7 +141,7 @@ def judge_is_prime(number: int) -> bool:
 other jumps do not show in there.
 
 In conclusion, it seems that the algorithm of tracert count time is just get the integer
-part of double packets’ times’ distance unless it’s to short to another integer.
+part of double packets" times" distance unless it's to short to another integer.
 
 <style type="text/css">
 div{

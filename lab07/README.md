@@ -1,5 +1,5 @@
 <!--
- * @Github: https://github.com/Certseeds/CS305_2019F_Remake
+ * @Github: https://github.com/Certseeds/CS305_Remake
  * @Organization: SUSTech
  * @Author: nanoseeds
  * @Date: 2020-06-28 21:13:35
@@ -10,6 +10,7 @@
 ## Report 07 Details
 
 ### Question 1 : Select one UDP packet from your trace. From this packet,
+
 determine
 
 1. how many fields there are in the UDP header.
@@ -25,13 +26,14 @@ determine
 6. What is the protocol number for UDP?( Give your answer in both hexadecimal and decimal notation.) 
 
 ### Question 2
+
 Finish the question 4，6，7，9，10，12.
 
 4. What is the sequence number of the TCP SYN segment that is used to initiate the TCP connection between the client computer and gaia.cs.umass.edu? What is it in the segment that identifies the segment as a SYN segment?
 
 5. What is the sequence number of the SYNACK segment sent by gaia.cs.umass.edu to the client computer in reply to the SYN? What is the value of the Acknowledgement field in the SYNACK segment? How did gaia.cs.umass.edu determine that value? What is it in the segment that identifies the segment as a SYNACK segment?
 
-6. What is the sequence number of the TCP segment containing the HTTP POST command? Note that in order to find the POST command, you’ll need to dig into the packet content field at the bottom of the Wireshark window, looking for a segment with a “POST” within its DATA field.
+6. What is the sequence number of the TCP segment containing the HTTP POST command? Note that in order to find the POST command, you"ll need to dig into the packet content field at the bottom of the Wireshark window, looking for a segment with a “POST” within its DATA field.
 
 7. Consider the TCP segment containing the HTTP POST as the first segment in the TCP connection. What are the sequence numbers of the first six segments in the  TCP connection (including the segment containing the HTTP POST)? At what time was each segment sent? When was the ACK for each segment received? Given the difference between when each TCP segment was sent, and when its acknowledgement was received, what is the RTT value for each of the six segments? What is the EstimatedRTT value (see Section 3.5.3, page 242 in text) after the receipt of each ACK? Assume that the value of the EstimatedRTT is equal to the measured RTT for the first segment, and then is computed using the EstimatedRTT equation on page 242 for all subsequent segments.
   Note: Wireshark has a nice feature that allows you to plot the RTT for each of the TCP segments sent. Select a TCP segment in the “listing of captured packets” window that is being sent from the client to the gaia.cs.umass.edu server. Then select: Statistics->TCP Stream Graph->Round Trip Time Graph.
@@ -47,29 +49,32 @@ Finish the question 4，6，7，9，10，12.
 12. What is the throughput (bytes transferred per unit time) for the TCP connection? Explain how you calculated this value.
 
 ### Question 3
+
 In this assignment, you need to implements a RDT protocol on UDP socket.
 1. Requirement
-    1. Your protocol needs to ensure the reliability of data transfer. Packet loss and payload corruption might happen.
-        + To deal with packet loss, using ack and retransmission according to GBN the textbook.
-        + To deal with payload corruption, you need to design a checksum of your payload.
-    2. Your RDT protocol should be like TCP, which means it’s a stream-oriented protocol, not packet-oriented.
-        +  To establish a connection, you might need to do things like things in TCP:
-            1. SYN
-            2. SYN, ACK
-            3. ACK
-        + . To close a connection, you might need to do things like things in TCP:
-            1. FIN
-            2. ACK
-            3. FIN
-            4. ACK
-    3. Payload : 
-        Your payload might be like this:
+
+  1. Your protocol needs to ensure the reliability of data transfer. Packet loss and payload corruption might happen.
+    + To deal with packet loss, using ack and retransmission according to GBN the textbook.
+    + To deal with payload corruption, you need to design a checksum of your payload.
+  2. Your RDT protocol should be like TCP, which means it's a stream-oriented protocol, not packet-oriented.
+    +  To establish a connection, you might need to do things like things in TCP:
+      1. SYN
+      2. SYN, ACK
+      3. ACK
+    + . To close a connection, you might need to do things like things in TCP:
+      1. FIN
+      2. ACK
+      3. FIN
+      4. ACK 
+  3. Payload : 
+    Your payload might be like this:
 
 | SYN   | FIN   | ACK   | SEQ    | SEQ ACK | LEN    | CHEKCSUM | Payload |
 | :---- | :---- | :---- | :----- | :------ | :----- | :------- | :------ |
 | 1 bit | 1 bit | 1 bit | 4 byte | 4 byte  | 4 byte | 2 byte   | LEN     |
 
 > Checksum Calculation Example(just for reference)
+> 
 ``` python
 def calc_checksum(payload: bytes) ->int:
     sum:int = 0
@@ -79,7 +84,7 @@ def calc_checksum(payload: bytes) ->int:
     return (sum & 0xFF)
 ```
 
-2. API reference:
+1. API reference:
 
 + rdt code example:
 
@@ -110,7 +115,7 @@ class socket(UDPsocket):
     def send():
         # your code here
         pass
-``` 
+```
 
 + server code example:
 

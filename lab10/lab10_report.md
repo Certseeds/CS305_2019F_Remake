@@ -1,5 +1,5 @@
 <!--
- * @Github: https://github.com/Certseeds/CS305_2019F_Remake
+ * @Github: https://github.com/Certseeds/CS305_Remake
  * @Organization: SUSTech
  * @Author: nanoseeds
  * @Date: 2020-08-01 15:53:50
@@ -10,14 +10,15 @@
 
 ## <div>CS305 Computer Network</div>
 ## <div>Report_Lab10</div>
-**SID**:  \*\*\*\*\*\*\*\*   
+
+**SID**:  $********$  
 **Name**:  nanoseeds  
 
 
 ### Question 1
 1. 
 <div>
-  <img src="./pca_pngs/lab10_01_01_01.png"><br />
+  <img src="./pca_pngs/lab10_01_01_01.png" ><br />
   <div>Fig.1</div>
 </div>
 As the screenshot shows,
@@ -78,6 +79,7 @@ So although it seems that there's sum is large than 3200, but the data in every 
 
 
 ### Question 2
+
 <div>
   <img src="./pca_pngs/lab10_02_00_01.png"><br />
   <div>Fig.11</div>
@@ -105,9 +107,11 @@ So although it seems that there's sum is large than 3200, but the data in every 
 + Those packets are sent by middle routes, not the send host or target host.
 
 ### Question 3
+
 1. First should use “ipconfig /release” to stop the network connect.
 Then use “ipconfig /renew” to update the network message
 Should use “dhcp” to find the session packets.
+
 <div>
   <img src="./pca_pngs/lab10_03_01_01.png"><br />
   <div>Fig.15</div>
@@ -116,20 +120,22 @@ Should use “dhcp” to find the session packets.
 2. In the dhcp request packet, the source address and destination address is 0.0.0.0 and 255.255.255.255. Both of them are reserve address.
 0.0.0.0 is a set that means unknown address, usually means the sender don't known it's address.
 255.255.255.255 usually means it will be send to other host that under the same router.
+
 <div>
   <img src="./pca_pngs/lab10_03_02_01.png"><br />
   <div>Fig.16</div>
 </div>
 
-Correct Answer: 
-  + Source IP address: 0.0.0.0, which is a non-routable meta-address
-  + Destination IP address: 255.255.255.255, which is the limited broadcast address.
+Correct Answer:  
++ Source IP address: 0.0.0.0, which is a non-routable meta-address
++ Destination IP address: 255.255.255.255, which is the limited broadcast address.
 
-3. If host want to contact with others in the internet, it should know itself and the other sides ip address.
+1. If host want to contact with others in the internet, it should know itself and the other sides ip address.
 
 Correct Answer: IP address, Subnet Mask, Default Gateway, DNS Server and Host Name -0.2
 
 4. The lease time of a dynamic ip address can be find by “dhcp.option.ip_address_lease_time”. It decides how long the temp address can continue. Usually it was take in the Offer and ACK packets, which in the DHCP level and their Option code is 51.
+
 <div>
   <img src="./pca_pngs/lab10_03_04_01.png"><br />
   <div>Fig.17</div>

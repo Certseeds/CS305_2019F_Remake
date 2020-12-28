@@ -9,11 +9,13 @@
  -->
 ## <div>CS305 Computer Network</div>
 ## <div>Report_Lab03</div>
-**SID**:  \*\*\*\*\*\*\*\*   
+
+**SID**:  $********$  
 **Name**:  nanoseeds  
 
 
 ### Question 1
+
 1. Using cURL make Get request to http://httpbin.org/request  
 The command is:
 `curl -GET -v http://httpbin.org/get`
@@ -60,21 +62,24 @@ The command is:
 
 2. In this log, I get the request head and response head & response body – a json file. 
 For request,
-  + 1st line means Host: the aimed domain address of web is httpbin.org
-  + 2nd line means the User-Agent it use is "cURL/7.66.0"
-  + 3rd line means the Accept is just "*/*" (maybe means accept anything)
+
++ 1st line means Host: the aimed domain address of web is httpbin.org
++ 2nd line means the User-Agent it use is "cURL/7.66.0"
++ 3rd line means the Accept is just "*/*" (maybe means accept anything)
 
 3. For response,
-  + 1st, it uses HTTP1.1 protocol and the status code are 200, which means OK.
-  + 2nd, Date is the server’s date when its response this packet.
-  + 3rd, The Media type of the body of the request (used with POST and PUT requests).
-  + 4th, The length of the response body in octets (8-bit bytes)
-  + 5th, Control options for the current connection and list of hop-by-hop request fields.
-  + 6th, A name for the server. in this case, it’s gunicorn/19.9.0.
-  + 7th, Specifying which web sites can participate in cross-origin resource sharing.
-  + 8th, same as 7th.
+
++ 1st, it uses HTTP1.1 protocol and the status code are 200, which means OK.
++ 2nd, Date is the server's date when its response this packet.
++ 3rd, The Media type of the body of the request (used with POST and PUT requests).
++ 4th, The length of the response body in octets (8-bit bytes)
++ 5th, Control options for the current connection and list of hop-by-hop request fields.
++ 6th, A name for the server. in this case, it's gunicorn/19.9.0.
++ 7th, Specifying which web sites can participate in cross-origin resource sharing.
++ 8th, same as 7th.
 
 4. wireshark screenshot
+
 <div>
   <img src=" ./pca_pngs/lab03_01_01.png"><br />
   <div>Fig.1</div>
@@ -93,6 +98,7 @@ For request,
 this part, analysis is same as directly curl
 
 ### Question 2
+
 1. Using cURL make Get request to http://httpbin.org/request  
 The command is:
 `curl -d "username=foo&password=bar" POST http://httpbin.org/post`
@@ -154,25 +160,27 @@ curl: (6) Could not resolve host: POST
   "url": "http://httpbin.org/post"
 }
 ``` 
-Using cURL receive a json file in the end, and in this process, of course the request and reponse’s head message will be get.
+Using cURL receive a json file in the end, and in this process, of course the request and reponse's head message will be get.
 
 2. For request,
-  + 1 st line means it’s a POST packets use HTTP1.1 protocol and request url is /post for host.
-  + 2 nd line means Host: the aimed domain address of web is httpbin.org
-  + 3 rd line means the User-Agent it use is "curl/7.58.0"
-  + 4 th line means the Accept is just "*/*" (maybe means accept anything)
-  + 5 th line means the length of the post message is 25 bytes.
-  + 6 th lines means the type of post message is "application/x-www-form—urlencoded" Which means "HTML form submission"
+
++ 1 st line means it's a POST packets use HTTP1.1 protocol and request url is /post for host.
++ 2 nd line means Host: the aimed domain address of web is httpbin.org
++ 3 rd line means the User-Agent it use is "curl/7.58.0"
++ 4 th line means the Accept is just "*/*" (maybe means accept anything)
++ 5 th line means the length of the post message is 25 bytes.
++ 6 th lines means the type of post message is "application/x-www-form—urlencoded" Which means "HTML form submission"
 
 3. For response 
-  + 1st, it uses HTTP1.1 protocol and the status code are 200, which means OK.
-  + 2nd, Date is the server’s date when its response this packet.
-  + 3rd, The Media type of the body of the request (used with POST and PUT requests).
-  + 4th, The length of the response body in octets (8-bit bytes)
-  + 5th, Control options for the current connection and list of hop-by-hop request fields.
-  + 6th, A name for the server. in this case, it’s gunicorn/19.9.0.
-  + 7th, Specifying which web sites can participate in cross-origin resource sharing.
-  + 8th, same as 7th.
+
++ 1st, it uses HTTP1.1 protocol and the status code are 200, which means OK.
++ 2nd, Date is the server's date when its response this packet.
++ 3rd, The Media type of the body of the request (used with POST and PUT requests).
++ 4th, The length of the response body in octets (8-bit bytes)
++ 5th, Control options for the current connection and list of hop-by-hop request fields.
++ 6th, A name for the server. in this case, it's gunicorn/19.9.0.
++ 7th, Specifying which web sites can participate in cross-origin resource sharing.
++ 8th, same as 7th.
 
 4. 
 

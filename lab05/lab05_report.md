@@ -1,5 +1,5 @@
 <!--
- * @Github: https://github.com/Certseeds/CS305_2019F_Remake
+ * @Github: https://github.com/Certseeds/CS305_Remake
  * @Organization: SUSTech
  * @Author: nanoseeds
  * @Date: 2020-06-19 16:06:56
@@ -9,7 +9,7 @@
  -->
 ## <div>CS305 Computer Network</div>
 ## <div>Report_Lab05</div>
-**SID**:  \*\*\*\*\*\*\*\*   
+**SID**:  $********$   
 **Name**:  nanoseeds  
 
 
@@ -66,7 +66,7 @@ ns5.a.shifen.com.	364	IN	A	180.76.76.95
     + Type: A (get Host address)
     + Class: IN
   + Part B:
-  Because in the Additional records there have EDNS0: version 0 What’s more, there have 16bits of Z, which is all 0.
+  Because in the Additional records there have EDNS0: version 0 What's more, there have 16bits of Z, which is all 0.
   + Part C:
   From this query message, it can Accept DNSSEC security RRs.
 
@@ -79,13 +79,13 @@ ns5.a.shifen.com.	364	IN	A	180.76.76.95
   
   + Part A:
     + There exist three answers,
-    + The type of first is CNAME, it’s ttl is 0.
-    + The other double’s type is A, there ttl is 4.
+    + The type of first is CNAME, it's ttl is 0.
+    + The other double's type is A, there ttl is 4.
   + Part B:
     + There exist five authority RRS, all of their type are NS.
   + Part C:
     + There exist one special additional RRs with OPT type.
-    + It’s “Do bit” is 1: it can accept DNSSEC security RRs.
+    + It's “Do bit” is 1: it can accept DNSSEC security RRs.
 
 
 ### Question 2
@@ -128,13 +128,13 @@ In the next four screenshots, double is use udp,the other double use tcp.
 
 In this process, it catches 2 tcp packet and 2 udp packet.
   + The request of tcp use 64901 port and send it to 53 port.
-  + The response of tcp’s send port is 53 and receive port is 64901.
+  + The response of tcp's send port is 53 and receive port is 64901.
   + The request of udp use 3117 port and send it to 53 port.
-  + The response of udp’s send port is 53 and receive port is 3117.
-  + For the query message, first there protocol is different, so there deeper level’s message is not the same, but the answer in the Domain Name System part is the same.
+  + The response of udp's send port is 53 and receive port is 3117.
+  + For the query message, first there protocol is different, so there deeper level's message is not the same, but the answer in the Domain Name System part is the same.
   + However, tcp do not contain authoritative nameservers and Additional records.
   + At least the response Answers in print is the same.
-  + But however, in Wireshark, it’s obviously in udp, response contain Queries, Answers, Authoritative nameservers, Additional records. But in tcp’s response, only exist queries and Answers. (of course, there ttl is different, neither).
+  + But however, in Wireshark, it's obviously in udp, response contain Queries, Answers, Authoritative nameservers, Additional records. But in tcp's response, only exist queries and Answers. (of course, there ttl is different, neither).
 Answer: 
 + Number of TCP packets should be 5~9.
 + (three-way handshaking+ 1 request+ 1 response+ four-way handshake) 
