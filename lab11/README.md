@@ -1,5 +1,5 @@
 <!--
- * @Github: https://github.com/Certseeds/CS305_2019F_Remake
+ * @Github: https://github.com/Certseeds/CS305_Remake
  * @Organization: SUSTech
  * @Author: nanoseeds
  * @Date: 2020-08-08 22:07:23
@@ -12,6 +12,7 @@
 注:下述练习使用了Cisco Packet Tracer 软件
 
 ### Practice1
+
 <div>
   <img src="./pngs/lab11_pracrtice_01_01.png"><br />
   <div>1st</div>
@@ -22,6 +23,7 @@
 3. Enable and Configure rip version 1 on Ra, Rb and Rc
 4. Enable and Configure rip version 2 on Ra, Rb and Rc
 5. Find the difference between rip1 and rip2 
+
 <div>
   <img src="./pngs/lab11_pracrtice_01_02.png"><br />
   <div>2nd</div>
@@ -35,7 +37,7 @@
   <div>4th</div>
 </div>
 
-+ Tips ：rip1
++ Tips :rip1
 <div>
   <img src="./pngs/lab11_pracrtice_01_05.png"><br />
   <div>5th</div>

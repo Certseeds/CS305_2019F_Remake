@@ -1,5 +1,5 @@
 <!--
- * @Github: https://github.com/Certseeds/CS305_2019F_Remake
+ * @Github: https://github.com/Certseeds/CS305_Remake
  * @Organization: SUSTech
  * @Author: nanoseeds
  * @Date: 2020-06-25 18:21:49
@@ -10,24 +10,28 @@
 ## Report 06 Details
 
 ### Question 1: Using dash.js to load a dash resource  
-1.  Open "Network" view in ’developer tools’ of browse(such as chrome) to observe
 
-  +  Is there any ‘mpd’ files, What’s its name, what is the description of ‘mpd’ in mime 
+1. Open "Network" view in "developer tools" of browse(such as chrome) to observe
 
-  + Is there any ‘m4s’ files, what’s its related rate, will the files’ ‘rate’ change along with the changing of network condition(especially the bandwidth)
++ Is there any "mpd" files, What's its name, what is the description of "mpd" in mime 
+
++ Is there any "m4s" files, what's its related rate, will the files" "rate" change along with the changing of network condition(especially the bandwidth)
 
 2. Reference:
-  + A html embedded a dash.js which maybe helpful for loading a ‘mpd’ file
-    + http://reference.dashif.org/dash.js/nightly/samples/dash-if-reference-player/index.html  
+
++ A html embedded a dash.js which maybe helpful for loading a "mpd" file
+  + http://reference.dashif.org/dash.js/nightly/samples/dash-if-reference-player/index.html  
     or
-    + https://allen8101070.github.io/ITMAN_DASHjs/index.html
-  + A dataset of dash resources
-    + http://www-itec.uni-klu.ac.at/ftp/datasets/DASHDataset2014/
+  + https://allen8101070.github.io/ITMAN_DASHjs/index.html
++ A dataset of dash resources
+  + http://www-itec.uni-klu.ac.at/ftp/datasets/DASHDataset2014/
 
 ### Question 2
+
 0. Using multi thread (asyncio IO is also ok) and TCP socket to rewrite the http server which is asked in lab assignment 3.3,Based on Assignment 3.3, implement following features:
-  + Range Header support
-    + With this feature implemented, user can pause and resume download file from the server.
+
++ Range Header support
+  + With this feature implemented, user can pause and resume download file from the server.
   + Session Cookie support:
     + Remember last folder user visited, response with 302 Found if user access root directory.
     
@@ -39,9 +43,10 @@ Ps:"lastdir" here refers to the last path in the previous session
 Reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Location  
 
 1. A simple test scenario on session cookie support is described as follow:
-  + Step 1: add the python file which will be run as a advance web file system server into a testing directory which got a sub_directory named "a" with a sub_directory "b".
-  + Step 2: invoke the "web_file_system_server"
-  + Step 3: open a browser such as chrome, invoke the 1st session by using 127.0.0.1:8080 as URL, the press Enter key. 
+
++ Step 1: add the python file which will be run as a advance web file system server into a testing directory which got a sub_directory named "a" with a sub_directory "b".
++ Step 2: invoke the "web_file_system_server"
++ Step 3: open a browser such as chrome, invoke the 1st session by using 127.0.0.1:8080 as URL, the press Enter key. 
 
 <div>
   <img src="./pictures/lab06_00_01.png"><br />

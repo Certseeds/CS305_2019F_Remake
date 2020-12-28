@@ -1,5 +1,5 @@
 <!--
- * @Github: https://github.com/Certseeds/CS305_2019F_Remake
+ * @Github: https://github.com/Certseeds/CS305_Remake
  * @Organization: SUSTech
  * @Author: nanoseeds
  * @Date: 2020-06-25 20:04:26
@@ -9,13 +9,15 @@
  -->
 ## <div>CS305 Computer Network</div>  
 ## <div>Report_Lab06</div>
-**SID**:  \*\*\*\*\*\*\*\*   
+
+**SID**:  $********$   
 **Name**:  nanoseeds  
 
 
 ### Question 1
+
 0. In this question, use the "http://reference.dashif.org/dash.js/nightly/samples/dash-if-reference-player/index.html?tdsourcetag=s_pctim_aiomsg" to help get the related rate and resolution ratio. And the mpd file come from https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd  
-(The reason why I don’t choose another mpd file in http://www-itec.uni-klu.ac.at/ftp/datasets/DASHDataset2014 is most of them are so slow that it cannot be Played ,although I use a VPN to speed up it)
+(The reason why I don't choose another mpd file in http://www-itec.uni-klu.ac.at/ftp/datasets/DASHDataset2014 is most of them are so slow that it cannot be Played ,although I use a VPN to speed up it)
 
 1. There is a mpd file, the name of it is "bbs_30fps.mpd", the Context-Type of it is "application/dash+xml".
 

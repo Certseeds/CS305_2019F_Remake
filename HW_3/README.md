@@ -1,5 +1,5 @@
 <!--
- * @Github: https://github.com/Certseeds/CS305_2019F_Remake
+ * @Github: https://github.com/Certseeds/CS305_Remake
  * @Organization: SUSTech
  * @Author: nanoseeds
  * @Date: 2020-06-27 12:08:26
@@ -9,7 +9,7 @@
  -->
 ## <div>CS305 Computer Network</div>
 ## <div>HomeWork_3</div>
-**SID**:  \*\*\*\*\*\*\*\*   
+**SID**:  $********$   
 **Name**:  nanoseeds  
 
 
@@ -50,7 +50,7 @@ What is the difference between a forwarding table that we encountered in destina
 
 ### Question 5
 
-Consider the following network. With the indicated link costs, use Dijkstra’s shortest-path algorithm to compute the shortest path from x to all network nodes. Show how the algorithm works and show the final forwarding table in x.
+Consider the following network. With the indicated link costs, use Dijkstra's shortest-path algorithm to compute the shortest path from x to all network nodes. Show how the algorithm works and show the final forwarding table in x.
 
 <div>
   <img src="./pictures/HW_3_00_02.png"><br />
