@@ -26,26 +26,26 @@
 ;; OPT PSEUDOSECTION:
 ; EDNS: version: 0, flags: do; udp: 4096
 ;; QUESTION SECTION:
-;www.baidu.com.			IN	A
+;www.baidu.com.      IN  A
 
 ;; ANSWER SECTION:
-www.baidu.com.		940	IN	CNAME	www.a.shifen.com.
-www.a.shifen.com.	65	IN	A	182.61.200.7
-www.a.shifen.com.	65	IN	A	182.61.200.6
+www.baidu.com.    940  IN  CNAME  www.a.shifen.com.
+www.a.shifen.com.  65  IN  A  182.61.200.7
+www.a.shifen.com.  65  IN  A  182.61.200.6
 
 ;; AUTHORITY SECTION:
-a.shifen.com.		675	IN	NS	ns4.a.shifen.com.
-a.shifen.com.		675	IN	NS	ns3.a.shifen.com.
-a.shifen.com.		675	IN	NS	ns2.a.shifen.com.
-a.shifen.com.		675	IN	NS	ns1.a.shifen.com.
-a.shifen.com.		675	IN	NS	ns5.a.shifen.com.
+a.shifen.com.    675  IN  NS  ns4.a.shifen.com.
+a.shifen.com.    675  IN  NS  ns3.a.shifen.com.
+a.shifen.com.    675  IN  NS  ns2.a.shifen.com.
+a.shifen.com.    675  IN  NS  ns1.a.shifen.com.
+a.shifen.com.    675  IN  NS  ns5.a.shifen.com.
 
 ;; ADDITIONAL SECTION:
-ns1.a.shifen.com.	195	IN	A	61.135.165.224
-ns2.a.shifen.com.	66	IN	A	220.181.33.32
-ns3.a.shifen.com.	374	IN	A	112.80.255.253
-ns4.a.shifen.com.	364	IN	A	14.215.177.229
-ns5.a.shifen.com.	364	IN	A	180.76.76.95
+ns1.a.shifen.com.  195  IN  A  61.135.165.224
+ns2.a.shifen.com.  66  IN  A  220.181.33.32
+ns3.a.shifen.com.  374  IN  A  112.80.255.253
+ns4.a.shifen.com.  364  IN  A  14.215.177.229
+ns5.a.shifen.com.  364  IN  A  180.76.76.95
 
 ;; Query time: 40 msec
 ;; SERVER: 192.168.199.1#53(192.168.199.1)
