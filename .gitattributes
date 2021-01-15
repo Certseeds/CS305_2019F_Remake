@@ -47,8 +47,8 @@
 
 # Documents
 *.bibtex   text diff=bibtex
-*.doc	        diff=astextplain
-*.DOC	        diff=astextplain
+*.doc          diff=astextplain
+*.DOC          diff=astextplain
 *.docx          diff=astextplain
 *.DOCX          diff=astextplain
 *.dot           diff=astextplain
@@ -56,7 +56,7 @@
 *.pdf           diff=astextplain
 *.PDF           diff=astextplain
 *.rtf           diff=astextplain
-*.RTF	        diff=astextplain
+*.RTF          diff=astextplain
 *.ppt           diff=astextplain
 *.pptx          diff=astextplain
 *.md       text

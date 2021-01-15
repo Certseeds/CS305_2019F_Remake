@@ -45,7 +45,7 @@ First of all, Usually DNS lookup use UDP protocol, so the DNS step cost const ti
   So, it needs $6RTT_0$ to transfer the web
 
 3. Persistent HTTP, it cost $1 RTT_0$ to build the TCP connection. And cost $9*1RTT_0$ to transfer 9 objects. After ALL, it cost $10RTT_0$.
-	
+  
 4. In conclusion:
 
 + the HTTP is Non-persistent with no parallel TCP connections cost  $\sum_{i=1}^{n}{RTT_i} + 18RTT_0$
