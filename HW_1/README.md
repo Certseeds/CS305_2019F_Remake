@@ -4,15 +4,14 @@
  * @Author: nanoseeds
  * @Date: 2020-06-19 22:02:07
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-01-15 11:24:14
+ * @LastEditTime: 2021-01-15 11:33:16
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 
-# <div>CS305 Computer Network</div>
+# CS305 Computer Network HW1_Report
 
-# <div>Report_HW1</div>
+**SID**:  $********$
 
-**SID**:  $********$  
 **Name**:  nanoseeds  
 
 ## Question 1
